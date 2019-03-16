@@ -3,10 +3,12 @@
 
 ## UIWebView中
 `
-  [_webView.zpm_bridge registerName:@"nativeListenJs" handle:^(NSDictionary * _Nonnull paramer, jsCallBack  _Nonnull callBack) {
+
+  [_webView.zpm_bridge registerName:@"nativeListenJs" handle:^(NSDictionary * _Nonnull paramer, jsCallBack  _Nonnull callBack)   {
         NSLog(@"hello");
         callBack(@{});
-    }];
+  }];
+    
     
 `
 直接使用就可以了：
